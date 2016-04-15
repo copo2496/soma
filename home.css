@@ -1,0 +1,15 @@
+#bands {
+    text-align: center;
+    list-style-type: none;
+}
+
+.band {
+    width: 400px;
+    height: 260px;  
+    display: block;
+    margin: 0 auto;
+}
+
+.band:hover {
+    transform: translate(0px, -4px);
+}

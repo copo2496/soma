@@ -1,0 +1,15 @@
+body {
+    padding-bottom: 4px;
+    margin: 0px;
+    background-color: white;
+}
+
+#title {
+    width: 100%;
+    margin-top: 0px;
+    text-align: center;
+    font-family: Georgia;
+    background-color: mediumblue;
+    color: #E9FFFF;
+    padding-bottom: 4px;
+}
