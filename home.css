@@ -1,15 +1,69 @@
-#bands {
+html {
+    background-color: #0080FF
+}
+
+body {
+    background-color: #E5FFCC;
+    margin: 0 auto;
+}
+
+#title {
+    width: 100%;
+    height: 100px;
+    margin-top: 0px;
     text-align: center;
+    font-family: Georgia;
+    background-color: #0080FF;
+    color: #CCFFE5;
+    padding-bottom: 10px;
+}
+
+#bands {
+    width: 1230px;
+    padding-bottom: 10%;
+    margin: 0 auto;
+}
+
+#list {
     list-style-type: none;
+    display: inline-block;
+    padding: 0%;
 }
 
 .band {
     width: 400px;
-    height: 260px;  
-    display: block;
-    margin: 0 auto;
+    height: 264px;      
+    display: inline-block;
 }
 
-.band:hover {
-    transform: translate(0px, -4px);
+.image {
+    z-index: 1;
+    height: 264px;
+    position: absolute;
+    transition: all 0.5s ease;
+}
+
+.band:hover .image {
+    transform: translate(0px, -6px);
+}
+
+.textbox {
+    z-index: 0;
+    width: 400px;
+    height: 160px;
+    background-color: #190033;
+    position: absolute;
+    transition: all 0.5s ease;
+}
+
+.band:hover .textbox {
+    transform: translate(0px, 260px);
+}
+
+.textbox > p {
+    z-index: 0;
+    transition: all 1s ease;
+    padding-left: 4%;
+    font-family: Georgia;
+    color: white;
 }
